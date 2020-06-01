@@ -57,11 +57,38 @@ namespace BranchesAndLoops
                 Console.WriteLine($"Index is {index}");
             }
         }
+        static void nestedfor()
+        {
+            for (int row=1; row<11; row++)
+            {
+                for (char column='a'; column<'k'; column++)
+                {
+                    Console.WriteLine($"The cell is ({row},{column})");
+                }
+                
+           
+                
+            }
+        }
+        static void challenge()
+        {
+            int suma=0;
+            for (int i=0; i<21; i++)
+            {
+                if (i%3==0)
+                {
+                    suma=suma+i;
+                }
+            }
+            Console.WriteLine($"Suma je: {suma}");
+        }
         static void Main(string[] args)
         {
             //Exploreif();
             //testwhile();
-            testfor();
+            //testfor();
+            //nestedfor();
+            challenge();
         }
     }
 }
